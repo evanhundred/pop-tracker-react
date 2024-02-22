@@ -1,0 +1,47 @@
+$color: #9933ff;
+$border-color: #ff5050;
+$background-color: #ffffff;
+$data-color: #003366;
+$header-color: #0099ff;
+
+$map: rgb(81, 199, 212);
+// $map: rgba(222, 31, 18, 1);
+// $very-light-gray: rgb(239, 235, 235);
+
+#main-content {
+  & header#instructions {
+    font-weight: 600;
+    h3.instructions-link {
+      font-size: 18px;
+      cursor: pointer;
+      color: $data-color;
+      margin-bottom: 10px;
+    }
+  }
+
+  & #legend-div {
+    margin: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: $very-light-gray;
+    border-radius: 8px;
+
+    & #legend-box {
+      margin: 15px 5vw;
+      max-width: 1000px;
+      line-height: 1.2;
+    }
+
+    & #vintageSelector {
+      & li.selected {
+        box-shadow: 2px 2px rgb(219, 219, 219);
+        border-radius: 6px;
+      }
+    }
+  }
+
+  & #second-line {
+    margin: 35px 0 10px;
+  }
+}
